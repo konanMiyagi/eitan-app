@@ -1,5 +1,5 @@
-// screens/WordScreen.tsx
-
+// 単語画面
+import wordList from '../assets/jsonData/begginer_words.json';
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import {
@@ -8,33 +8,6 @@ import {
   GestureHandlerRootView,
 } from "react-native-gesture-handler";
 
-// 仮データ
-const wordList = [
-  {
-    word: "apple",
-    partOfSpeech: "noun",
-    phonetics: { us: "/ˈæp.əl/", uk: "/ˈæp.l̩/" },
-    meanings: [
-      {
-        ja: "リンゴ（果物）",
-        usage: "I ate an apple for breakfast.",
-        usage_ja: "私は朝食にリンゴを食べた。",
-      },
-    ],
-  },
-  {
-    word: "banana",
-    partOfSpeech: "noun",
-    phonetics: { us: "/bəˈnæn.ə/", uk: "/bəˈnɑː.nə/" },
-    meanings: [
-      {
-        ja: "バナナ",
-        usage: "He peeled a banana.",
-        usage_ja: "彼はバナナの皮をむいた。",
-      },
-    ],
-  },
-];
 
 export default function WordScreen() {
   const [index, setIndex] = useState(0);
