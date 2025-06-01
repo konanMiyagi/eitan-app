@@ -9,7 +9,11 @@
           "usage": "I ate an apple for breakfast.",
           "usage_ja": "私は朝食にリンゴを食べた。"
         }
-      ]
+      ],
+      "audio": {
+        "us": "apple_us.mp3",
+        "uk": "apple_uk.mp3"
+        }
     },
     {
       "word": "banana",
@@ -21,7 +25,11 @@
           "usage": "He peeled a banana.",
           "usage_ja": "彼はバナナの皮をむいた。"
         }
-      ]
+      ],
+      "audio": {
+        "us": "banana_us.mp3",
+        "uk": "banana_uk.mp3"
+        }
     }
   ]
   
