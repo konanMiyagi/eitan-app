@@ -1,5 +1,6 @@
 // 単語画面
-import wordList from '../assets/jsonData/begginer_words.json';
+import { playSound } from "../utils/soundPlayer";
+import wordList from "../assets/jsonData/begginer_words.json";
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import {
@@ -7,7 +8,6 @@ import {
   Gesture,
   GestureHandlerRootView,
 } from "react-native-gesture-handler";
-
 
 export default function WordScreen() {
   const [index, setIndex] = useState(0);
@@ -31,10 +31,10 @@ export default function WordScreen() {
 
   // スワイパー処理
   const handleSwipe = Gesture.Pan().onEnd((event) => {
-    const spx = event.translationX;
-    if (spx > 100) {
+    const swipePixcel = event.translationX;
+    if (swipePixcel > 100) {
       goToPreviousWord();
-    } else if (spx < -100) {
+    } else if (swipePixcel < -100) {
       goToNextWord();
     }
   });
@@ -45,8 +45,23 @@ export default function WordScreen() {
         <View style={styles.container}>
           <Text style={styles.word}>{word.word}</Text>
           <Text style={styles.part}>{word.partOfSpeech}</Text>
-          <Text style={styles.phonetic}>US: {word.phonetics.us}</Text>
-          <Text style={styles.phonetic}>UK: {word.phonetics.uk}</Text>
+
+          {/* 音声再生ボタン */}
+          <View style={styles.audioButtons}>
+            <TouchableOpacity
+              onPress={() => playSound(word.audio?.us)}
+              style={styles.audioButton}
+            >
+              <Text>🔊 US</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => playSound(word.audio?.uk)}
+              style={styles.audioButton}
+            >
+              <Text>🔊 UK</Text>
+            </TouchableOpacity>
+          </View>
+
           {/* 意味・例文表示アコーディオン */}
           <TouchableOpacity onPress={toggleAccordion}>
             <Text style={styles.toggleText}>
@@ -59,9 +74,7 @@ export default function WordScreen() {
                 意味：{word.meanings[0].ja}
               </Text>
               <Text>英文：{word.meanings[0].usage}</Text>
-              <Text style={{ color: "gray" }}>
-                和訳：{word.meanings[0].usage_ja}
-              </Text>
+              <Text style={{ color: "gray" }}>{word.meanings[0].usage_ja}</Text>
             </View>
           )}
         </View>
@@ -91,5 +104,16 @@ const styles = StyleSheet.create({
   detailTitle: {
     fontWeight: "bold",
     marginBottom: 5,
+  },
+  audioButtons: {
+    flexDirection: "row",
+    marginTop: 20,
+    gap: 20,
+  },
+  audioButton: {
+    backgroundColor: "#f0f0f0",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 10,
   },
 });
