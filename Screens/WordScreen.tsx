@@ -44,10 +44,12 @@ export default function WordScreen() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <GestureDetector gesture={handleSwipe}>
         <View style={styles.container}>
-          <Text style={styles.word}>{word.word}</Text>
           {/* 品詞 */}
-          <View style={styles.posCircle}>
-            <Text style={styles.pos}>{mapPosToKanji(word.partOfSpeech)}</Text>
+          <View style={styles.wordWithPos}>
+            <Text style={styles.word}>{word.word}</Text>
+            <View style={styles.posCircle}>
+              <Text style={styles.pos}>{mapPosToKanji(word.partOfSpeech)}</Text>
+            </View>
           </View>
 
           {/* 音声再生ボタン */}
@@ -88,9 +90,27 @@ export default function WordScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center" },
-  word: { fontSize: 40, fontWeight: "bold" },
-  part: { fontSize: 20, marginVertical: 10, color: "#1E90FF" },
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  word: {
+    fontSize: 40,
+    fontWeight: "bold",
+    marginRight: 8,
+  },
+  wordWithPos: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent: "center",
+    gap: 6,
+  },
+  part: {
+    fontSize: 20,
+    marginVertical: 10,
+    color: "#1E90FF",
+  },
   phonetic: { fontSize: 18 },
   toggleText: {
     marginTop: 30,
@@ -121,19 +141,18 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   posCircle: {
-    borderWidth: 1,
-    borderColor: "#000",
-    borderRadius: 999,
-    padding: 4,
     width: 24,
     height: 24,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#000",
     justifyContent: "center",
     alignItems: "center",
-    marginVertical: 6,
+    marginLeft: 4,
+    marginBottom: 5,
   },
   pos: {
     fontSize: 12,
-    fontWeight: "bold",
-    textAlign: "center",
+    lineHeight: 12,
   },
 });
