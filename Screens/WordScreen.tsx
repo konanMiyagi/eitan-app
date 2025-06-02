@@ -1,5 +1,6 @@
 // 単語画面
 import { playSound } from "../utils/soundPlayer";
+import { mapPosToKanji } from "../utils/posToKanji";
 import wordList from "../assets/jsonData/begginer_words.json";
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
@@ -44,7 +45,10 @@ export default function WordScreen() {
       <GestureDetector gesture={handleSwipe}>
         <View style={styles.container}>
           <Text style={styles.word}>{word.word}</Text>
-          <Text style={styles.part}>{word.partOfSpeech}</Text>
+          {/* 品詞 */}
+          <View style={styles.posCircle}>
+            <Text style={styles.pos}>{mapPosToKanji(word.partOfSpeech)}</Text>
+          </View>
 
           {/* 音声再生ボタン */}
           <View style={styles.audioButtons}>
@@ -115,5 +119,21 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 10,
+  },
+  posCircle: {
+    borderWidth: 1,
+    borderColor: "#000",
+    borderRadius: 999,
+    padding: 4,
+    width: 24,
+    height: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    marginVertical: 6,
+  },
+  pos: {
+    fontSize: 12,
+    fontWeight: "bold",
+    textAlign: "center",
   },
 });
