@@ -1,27 +1,122 @@
 [
-    {
-      "word": "apple",
-      "partOfSpeech": "noun",
-      "phonetics": { "us": "/ˈæp.əl/", "uk": "/ˈæp.l̩/" },
-      "meanings": [
-        {
-          "ja": "リンゴ（果物）",
-          "usage": "I ate an apple for breakfast.",
-          "usage_ja": "私は朝食にリンゴを食べた。"
-        }
-      ]
-    },
-    {
-      "word": "banana",
-      "partOfSpeech": "noun",
-      "phonetics": { "us": "/bəˈnæn.ə/", "uk": "/bəˈnɑː.nə/" },
-      "meanings": [
-        {
-          "ja": "バナナ",
-          "usage": "He peeled a banana.",
-          "usage_ja": "彼はバナナの皮をむいた。"
-        }
-      ]
-    }
-  ]
-  
+  {
+    "word": "appointment",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "əˈpɔɪnt.mənt", "uk": "əˈpɔɪnt.mənt" },
+    "meanings": [
+      {
+        "ja": "約束、予約",
+        "usage": "She made an appointment with the doctor.",
+        "usage_ja": "彼女は医者と予約を取った。"
+      }
+    ]
+  },
+  {
+    "word": "budget",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "ˈbʌdʒ.ɪt", "uk": "ˈbʌdʒ.ɪt" },
+    "meanings": [
+      {
+        "ja": "予算",
+        "usage": "We need to review our marketing budget.",
+        "usage_ja": "私たちはマーケティング予算を見直す必要がある。"
+      }
+    ]
+  },
+  {
+    "word": "candidate",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "ˈkæn.dɪ.deɪt", "uk": "ˈkæn.dɪ.dət" },
+    "meanings": [
+      {
+        "ja": "候補者",
+        "usage": "The candidate was well-qualified for the position.",
+        "usage_ja": "その候補者はその職に対して十分な資格を持っていた。"
+      }
+    ]
+  },
+  {
+    "word": "deadline",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "ded.laɪn", "uk": "ded.laɪn" },
+    "meanings": [
+      {
+        "ja": "締め切り",
+        "usage": "We must meet the project deadline.",
+        "usage_ja": "私たちはプロジェクトの締め切りを守らなければならない。"
+      }
+    ]
+  },
+  {
+    "word": "equipment",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "ɪˈkwɪp.mənt", "uk": "ɪˈkwɪp.mənt" },
+    "meanings": [
+      {
+        "ja": "機器、設備",
+        "usage": "The office equipment is brand new.",
+        "usage_ja": "そのオフィス機器は新品だ。"
+      }
+    ]
+  },
+  {
+    "word": "invoice",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "ˈɪn.vɔɪs", "uk": "ˈɪn.vɔɪs" },
+    "meanings": [
+      {
+        "ja": "請求書",
+        "usage": "Please send the invoice to the accounting department.",
+        "usage_ja": "請求書を経理部に送ってください。"
+      }
+    ]
+  },
+  {
+    "word": "launch",
+    "partOfSpeech": "verb",
+    "phonetics": { "us": "lɔːntʃ", "uk": "lɔːntʃ" },
+    "meanings": [
+      {
+        "ja": "開始する、発売する",
+        "usage": "The company will launch a new product next month.",
+        "usage_ja": "その会社は来月新製品を発売する予定だ。"
+      }
+    ]
+  },
+  {
+    "word": "negotiation",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "nɪˌɡoʊ.ʃiˈeɪ.ʃən", "uk": "nɪˌɡəʊ.ʃiˈeɪ.ʃən" },
+    "meanings": [
+      {
+        "ja": "交渉",
+        "usage": "The negotiation took several hours.",
+        "usage_ja": "その交渉には数時間かかった。"
+      }
+    ]
+  },
+  {
+    "word": "reschedule",
+    "partOfSpeech": "verb",
+    "phonetics": { "us": "ˌriːˈskedʒ.uːl", "uk": "ˌriːˈʃed.juːl" },
+    "meanings": [
+      {
+        "ja": "予定を変更する",
+        "usage": "Can we reschedule the meeting for next week?",
+        "usage_ja": "会議を来週に変更できますか？"
+      }
+    ]
+  },
+  {
+    "word": "warehouse",
+    "partOfSpeech": "noun",
+    "phonetics": { "us": "ˈwer.haʊs", "uk": "ˈweə.haʊs" },
+    "meanings": [
+      {
+        "ja": "倉庫",
+        "usage": "The goods are stored in a warehouse.",
+        "usage_ja": "その商品は倉庫に保管されている。"
+      }
+    ]
+  }
+]
