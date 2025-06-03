@@ -2,7 +2,7 @@
     {
       "word": "apple",
       "partOfSpeech": "noun",
-      "phonetics": { "us": "/ˈæp.əl/", "uk": "/ˈæp.l̩/" },
+      "phonetics": { "us": "ˈæp.əl", "uk": "ˈæp.l̩" },
       "meanings": [
         {
           "ja": "リンゴ（果物）",
@@ -18,7 +18,7 @@
     {
       "word": "banana",
       "partOfSpeech": "noun",
-      "phonetics": { "us": "/bəˈnæn.ə/", "uk": "/bəˈnɑː.nə/" },
+      "phonetics": { "us": "bəˈnæn.ə", "uk": "bəˈnɑː.nə" },
       "meanings": [
         {
           "ja": "バナナ",

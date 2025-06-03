@@ -54,18 +54,25 @@ export default function WordScreen() {
 
           {/* 音声再生ボタン */}
           <View style={styles.audioButtons}>
-            <TouchableOpacity
-              onPress={() => playSound(word.audio?.us)}
-              style={styles.audioButton}
-            >
-              <Text>🔊 US</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => playSound(word.audio?.uk)}
-              style={styles.audioButton}
-            >
-              <Text>🔊 UK</Text>
-            </TouchableOpacity>
+            <View style={styles.audioItem}>
+              <Text style={styles.phonetic}>{word.phonetics.us}</Text>
+              <TouchableOpacity
+                onPress={() => playSound(word.audio?.us)}
+                style={styles.speakerButton}
+              >
+                <Text style={styles.speakerText}>🔊 US</Text>
+              </TouchableOpacity>
+            </View>
+
+            <View style={styles.audioItem}>
+              <Text style={styles.phonetic}>{word.phonetics.uk}</Text>
+              <TouchableOpacity
+                onPress={() => playSound(word.audio?.uk)}
+                style={styles.speakerButton}
+              >
+                <Text style={styles.speakerText}>🔊 UK</Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           {/* 意味・例文表示アコーディオン */}
@@ -111,7 +118,36 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     color: "#1E90FF",
   },
-  phonetic: { fontSize: 18 },
+  phonetic: {
+    fontSize: 16,
+    color: "#444",
+    marginBottom: 4,
+    fontFamily: "serif", // より発音記号っぽく
+  },
+  audioButtons: {
+    flexDirection: "row",
+    justifyContent: "center",
+    gap: 16,
+    marginVertical: 12,
+  },
+  audioButton: {
+    backgroundColor: "#f0f0f0",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+  },
+  audioItem: {
+    alignItems: "center",
+  },
+  speakerButton: {
+    backgroundColor: "#f0f0f0",
+    borderRadius: 8,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+  },
+  speakerText: {
+    fontSize: 14,
+  },
   toggleText: {
     marginTop: 30,
     fontSize: 18,
@@ -128,17 +164,6 @@ const styles = StyleSheet.create({
   detailTitle: {
     fontWeight: "bold",
     marginBottom: 5,
-  },
-  audioButtons: {
-    flexDirection: "row",
-    marginTop: 20,
-    gap: 20,
-  },
-  audioButton: {
-    backgroundColor: "#f0f0f0",
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 10,
   },
   posCircle: {
     width: 24,
