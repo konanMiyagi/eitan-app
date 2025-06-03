@@ -9,7 +9,11 @@
         "usage": "She made an appointment with the doctor.",
         "usage_ja": "彼女は医者と予約を取った。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "appointment_us.mp3",
+      "uk": "appointment_uk.mp3"
+    }
   },
   {
     "word": "budget",
@@ -21,7 +25,11 @@
         "usage": "We need to review our marketing budget.",
         "usage_ja": "私たちはマーケティング予算を見直す必要がある。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "budget_us.mp3",
+      "uk": "budget_uk.mp3"
+    }
   },
   {
     "word": "candidate",
@@ -33,7 +41,11 @@
         "usage": "The candidate was well-qualified for the position.",
         "usage_ja": "その候補者はその職に対して十分な資格を持っていた。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "candidate_us.mp3",
+      "uk": "candidate_uk.mp3"
+    }
   },
   {
     "word": "deadline",
@@ -45,7 +57,11 @@
         "usage": "We must meet the project deadline.",
         "usage_ja": "私たちはプロジェクトの締め切りを守らなければならない。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "deadline_us.mp3",
+      "uk": "deadline_uk.mp3"
+    }
   },
   {
     "word": "equipment",
@@ -57,7 +73,11 @@
         "usage": "The office equipment is brand new.",
         "usage_ja": "そのオフィス機器は新品だ。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "equipment_us.mp3",
+      "uk": "equipment_uk.mp3"
+    }
   },
   {
     "word": "invoice",
@@ -69,7 +89,11 @@
         "usage": "Please send the invoice to the accounting department.",
         "usage_ja": "請求書を経理部に送ってください。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "invoice_us.mp3",
+      "uk": "invoice_uk.mp3"
+    }
   },
   {
     "word": "launch",
@@ -81,7 +105,11 @@
         "usage": "The company will launch a new product next month.",
         "usage_ja": "その会社は来月新製品を発売する予定だ。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "launch_us.mp3",
+      "uk": "launch_uk.mp3"
+    }
   },
   {
     "word": "negotiation",
@@ -93,7 +121,11 @@
         "usage": "The negotiation took several hours.",
         "usage_ja": "その交渉には数時間かかった。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "negotiation_us.mp3",
+      "uk": "negotiation_uk.mp3"
+    }
   },
   {
     "word": "reschedule",
@@ -105,7 +137,11 @@
         "usage": "Can we reschedule the meeting for next week?",
         "usage_ja": "会議を来週に変更できますか？"
       }
-    ]
+    ],
+    "audio": {
+      "us": "reschedule_us.mp3",
+      "uk": "reschedule_uk.mp3"
+    }
   },
   {
     "word": "warehouse",
@@ -117,6 +153,10 @@
         "usage": "The goods are stored in a warehouse.",
         "usage_ja": "その商品は倉庫に保管されている。"
       }
-    ]
+    ],
+    "audio": {
+      "us": "warehouse_us.mp3",
+      "uk": "warehouse_uk.mp3"
+    }
   }
 ]
